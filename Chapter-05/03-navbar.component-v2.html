@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">AuthApp</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item" routerLinkActive="Active">
+                <a class="nav-link" [routerLink]="['home']">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item" routerLinkActive="Active">
+                <a class="nav-link" [routerLink]="['about']">About</a>
+            </li>
+            <li *ngIf="auth.isAuthenticated()" class="nav-item" routerLinkActive="Active">
+                <a class="nav-link" [routerLink]="['private']">Private</a>
+            </li>
+        </ul>
+        <button class="btn btn-primary btn-margin" *ngIf="!auth.isAuthenticated()" (click)="login()">
+            Log In
+        </button>
+
+        <button class="btn btn-primary btn-margin" *ngIf="auth.isAuthenticated()" (click)="logout()">
+            Log Out
+        </button>
+    </div>
+</nav>

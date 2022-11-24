@@ -1,0 +1,7 @@
+{
+  "title": "Sample Post",
+  "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.) Duis et tortor condimentum, accumsan metus at, hendrerit metus, Lorem ipsum dolor sit amet, consectetur adipiscing elit, Donec dictum eros vitae eros vulputate, in maximus sem egestas, Maecenas egestas pharetra gravida, Vestibulum nec lectus feugiat, finibus ante eget, convallis arcu, Nam ligula erat, fermentum ac tortor nec, efficienur facilisis eros Nulla elementum felis ut my consequat sagittis Cras viverra enim mi, vel condimentum est dignissim quis Pellentesque ut libero lobortis, porta mauris non, blandit velit Aenean cursus blandit scelerisque Donec bibendum massa ut tellus euismod, ut euismod arcu gravida Integer dignissim sem hare, vel suscipit sem faucibus id Nulla nec nibh est Vestibulum convallis magna vitae placerat eleifend Duis lacinia rhoncus elit, a sodales mauris sollicitudin eu.Proin tincidunt finibus cursus. ",
+  "author_id": {
+    "$oid": "6345f87e429dc42f97964406"
+  }
+}

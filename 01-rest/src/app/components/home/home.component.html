@@ -1,0 +1,21 @@
+<app-loading *ngIf="loading"></app-loading>
+
+<div class="container pt-5" *ngIf="!loading">
+    <div class="btn-toolbar" role="toolbar">
+        <div class="btn-group">
+            <button class="btn btn-success" (click)="addUser()">Add User</button>
+        </div>
+    </div>
+    <ul>
+        <li *ngFor="let user of users">
+            <img [src]="user.avatar | noimage">
+            <p>{{ user.first_name }} {{ user.last_name }}</p>
+            <div style="padding-top: 5px; width: 18rem;">
+                <button class="btn btn-outline-primary btn-sm" (click)="userDetails(user.id)">
+                    Details
+                </button>
+                <button class="btn btn-danger btn-sm" title="Delete user" (click)="deleteUser(user)">X</button>
+            </div>
+        </li>
+    </ul>
+</div>

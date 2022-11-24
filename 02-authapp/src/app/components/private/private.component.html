@@ -1,0 +1,16 @@
+<div class="container" style="margin-top: 40px;">
+    <div class="card" style="width: 100%;">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-4" style="text-align: center;">
+                    <img [src]="profile?.picture" class="card-img-top img-thumb" [alt]="profile?.nickname">
+                    <h3>{{ profile?.nickname }}</h3>
+                </div>
+                <div class="col-8">
+                    <h5 class="card-title">{{ profile?.name }}</h5>
+                    <a [routerLink]="['/home']" class="btn btn-primary">Home</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
